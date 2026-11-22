@@ -1,5 +1,7 @@
 //! Logitech HID++ 2.0: find the mouse behind the receiver and read its battery.
-//! Protocol logic ported from LGSTrayBattery (andyvorld/LGSTrayBattery, MIT).
+//! SPDX-License-Identifier: GPL-3.0-only
+//! Protocol logic ported to Rust (and modified, November 2026) from LGSTrayBattery by andyvorld,
+//! https://github.com/andyvorld/LGSTrayBattery, licensed under GPL-3.0.
 
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::mpsc::{channel, Receiver, RecvTimeoutError, Sender};
